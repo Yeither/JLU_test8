@@ -1,0 +1,13 @@
+close all; clear; clc
+
+load mnist.mat
+for i= 0:20
+    img=mnist.mat
+end
+
+figure;  % 创建一个新的图形窗口
+for i = 1:6
+    subplot(3,2,i);  % 在 3x2 网格的第 i 位置创建子图
+     plot(d_iner(:,i),colors(i));  % 绘制第 i 列数据
+    title(name{i});  % 给每个子图添加标题
+end
